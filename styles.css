@@ -1,118 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 :root {
-    --beige-base-color: #DC7649;
-    --main-text-color1: #FCDBBA;
-    --main-dark-text-color: #363232;
-    --blue-sporadic-color: #918F97;
-    --brown-lat-color: #664135;
-    --beige-mia-color: #FBDCBA;
-    --dark-brown-color: #7B3000;
+    --green-logo-color: #2d8765;
+    --main-white: #fdfdfc;
+    --positive-green: #d0fbe5;
+    --bold-green: #277a55;
+    --large-text-black: #292524;
+    --small-text-black: #201b1a;
 }
 
 body {
+    width: 100vw;
     justify-content: space-around;
-    font-family: "Delius", cursive;
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: var(--small-text-black);
+    font-weight: 300;
     font-style: normal;
     margin: 0;
+    background-color: var(--main-white);
 
 }
 
 #header {
     display: flex;
+    position: static;
     width: 100vw;
-    height: 150px;
+    height: 100px;
     background: linear-gradient(
-        180deg,
-        var(--brown-lat-color)0%,
-        var(--brown-lat-color)5%,
-        var(--beige-mia-color)90%,
-        var(--beige-mia-color)100%
+        90deg,
+        var(--main-white)0%,
+        var(--positive-green)50%,
+        var(--positive-green)100%
     );
-    margin-bottom: 0px;
     
 }
 
 #header > img {
     display: flex;
     align-content: flex-start;
-    width: 200px;
-    height: 200px;
-    padding-left: 50px;
-    align-self: center;
-    
+    position: relative;
+    width: 300px;
+    height: 300px;
+    align-self:center;
+    margin-right: -100px;
+    margin-left: -50px;
 }
 
-nav {
+#header > nav {
     display: flex;
     align-self: center;
     justify-content: center;
     gap: 50px;
-    padding-left: 280px;
+    padding-left: 350px
 
 }
 
-a {
+#header > nav > a {
     text-decoration: none;
-    background-color: var(--beige-mia-color);
     width: 140px;
     height: 30px;
     text-align: center;
-    border-radius: 7px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: var(--brown-lat-color);
-    text-shadow: black .3px .5px;
-    box-shadow: var(--main-dark-text-color) 2px 2px 10px 3px;
-    transition: all 300ms ease-in-out;
+    font-size: 22px;
+    font-weight: normal;
+    color: var(--small-text-black);
+    transition: all 250ms ease-in-out;
 }
 
 a:hover {
-    width: 142px;
-    height: 31px;
-    background-color: var(--brown-lat-color);
-    color: var(--beige-mia-color);
+    color: var(--green-logo-color);
+    text-shadow: black .2px .2px .2px .2px;
+    font-weight: normal;
 }
 
-
-#banner {
+.banner {
     display: flex;
     width: 100vw;
-    height: 280px;
-    border-radius: 5px;
-    opacity: 75%;
-}
-
-#banner > img {
-    display: flex;
-    justify-content: left;
-    align-self: center;
-    width: 100vw;
-    margin-top: 300px;
-    height: 580px;
-    border-color: #664135;
-    border-style: solid;
-    border-width: 0px;
-}
-
-#container {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+     background: linear-gradient(
+        90deg,
+        var(--main-white)0%,
+        var(--positive-green)50%,
+        var(--positive-green)100%
+    );
 
 }
 
-#container-form {
-    display: flex;
-    flex-direction: column;
-    border-color: black;
-    border-style: solid;
-    border-radius: 15px;
-    border-width: 5px;
-    background-color: var(--brown-lat-color);
-    justify-self: right;
-    margin-right: 50px;
-    padding-top: 200px;
-    width: 800px;
-    height: 250px;
-    position: relative;
-    opacity: 80%;
+.banner-message1 {
+    width: 50vw;
+    height: 400px;
+
+}
+
+.banner-message1 > h1 {
+    flex-direction: 1;
+    width: 100%;
+    margin-top: 100px;
     text-align: center;
+    justify-self: center;
+}
+
+.banner-message1 > h3 {
+    flex: 1;
+    margin-top: 50px;
+    position: relative;
+    text-align: left;
+    width: 500px;
+    justify-self: center;
+
 }
