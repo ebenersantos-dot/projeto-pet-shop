@@ -9,8 +9,6 @@
     --bold-green: #278765;
     --large-text-black: #292524;
     --small-text-black: #201b1a;
-
-    /*88c5d7c9*/
 }
 
 body {
@@ -106,11 +104,11 @@ body {
     text-align: center;
     justify-self: center;
     color: var(--large-text-black);
-    /*text-shadow: black 0.5px 0.5px 0.5px;*/
     
 }
 
 .banner-message1 > h3 {
+    font-size: 22px;
     margin-top: 50px;
     position: relative;
     text-align: left;
@@ -118,6 +116,7 @@ body {
     justify-self: center;
     font-weight: 300;
     text-align: justify;
+    color: var(--gray-logo-color);
 
 }
 
@@ -126,85 +125,178 @@ body {
     padding-left: 50px;
 }
 
-.servicos {
-    width: 100%;
-     background: linear-gradient(
+.title-servicos > h1 {
+    margin: 0;
+    width: 100vw;
+    text-align: center;
+    background: linear-gradient(
         90deg,
         var(--main-white)0%,
         var(--blue-bg-color)50%,
         var(--blue-bg-color)100%
      );  
-
 }
 
-.servicos > h1 {
-    text-align: center;
-    padding-bottom: 100px;
-
+.servicos {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    gap: 250px;          
+    flex-wrap: wrap;          
+    padding: 20px;
+    background: linear-gradient(
+        90deg,
+        var(--main-white)0%,
+        var(--blue-bg-color)50%,
+        var(--blue-bg-color)100%
+     );  
 }
 
-.atendimento-clinico > img {
-    display: flex;
+.servico-atendimento {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;  
+  border-radius: 8px;
+  padding: 50px;
+  min-width: 120px;
+  transition: all 250ms ease-in-out;
+}
+
+.servico-atendimento > img {
     width: 200px;
-    margin-bottom: -70px;
-    border: white solid 5px;
-    border-radius: 20px;
+    margin: -50px;
 }
 
-.atendimento-clinico > h3 {
-    position: relative;
-    justify-self: left;
-    text-align: center;
-    padding-left: 120px;
+.servico-atendimento:hover {
+    box-shadow: var(--gray-logo-color) 2px 2px 2px ;
 }
 
-.banho-e-tosa > img {
-    display: flex;
-    justify-self: center;
+.servico-banho-e-tosa {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;  
+  border-radius: 8px;
+  padding: 50px;
+  min-width: 120px;
+  transition: all 250ms ease-in-out;
+}
+
+.servico-banho-e-tosa > img {
     width: 200px;
-    border: white solid 5px;
-    border-radius: 20px;
+    margin: -50px;
 }
 
-.banho-e-tosa > h3 {
-    justify-self: center;
-    text-align: center;
-    padding-left: 120px;
+.servico-banho-e-tosa:hover {
+    box-shadow: var(--gray-logo-color) 2px 2px 2px ;
 }
 
-.vacinacao > img {
-    display: flex;
+.servico-vacinacao {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;  
+  border-radius: 8px;
+  padding: 50px;
+  min-width: 120px;
+  transition: all 250ms ease-in-out;
+}
+
+.servico-vacinacao > img {
     width: 200px;
-    justify-self: right;
-    border: white solid 5px;
-    border-radius: 20px;
+    margin: -50px;
 }
+
+.servico-vacinacao:hover {
+    box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+}
+
+.servicos2 {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    gap: 250px;          
+    flex-wrap: wrap;          
+    padding: 20px;
+    background: linear-gradient(
+        90deg,
+        var(--main-white)0%,
+        var(--blue-bg-color)50%,
+        var(--blue-bg-color)100%
+     );  
+}
+
+.doc-para-viagens {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;  
+  border-radius: 8px;
+  padding: 50px;
+  min-width: 120px;
+  transition: all 250ms ease-in-out;
+}
+
 .doc-para-viagens > img {
-    display: flex;
     width: 200px;
-    justify-self: left;
-    margin-left: 100px;
-    margin-bottom: -70px;
-    border: white solid 5px;
-    border-radius: 20px;
+    margin: -50px;
+}
+
+.doc-para-viagens:hover {
+    box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+}
+
+.cirurgias {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;  
+  border-radius: 8px;
+  padding: 50px;
+  min-width: 120px;
+  transition: all 250ms ease-in-out;
 }
 
 .cirurgias > img {
-    display: flex;
     width: 200px;
-    justify-self: center;
-    margin-left: 100px;
-    margin-bottom: -70px;
-    border: white solid 5px;
-    border-radius: 20px;
+    margin: -50px;
+}
+
+.cirurgias:hover {
+    box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+}
+
+.nutricao {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;  
+  border-radius: 8px;
+  padding: 50px;
+  min-width: 120px;
+  transition: all 250ms ease-in-out;
 }
 
 .nutricao > img {
-    display: flex;
     width: 200px;
-    justify-self: right;
-    margin-left: 100px;
-    margin-bottom: -70px;
-    border: white solid 5px;
-    border-radius: 20px;
+    margin: -50px;
 }
+
+.nutricao:hover {
+    box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+}
+
+
