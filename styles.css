@@ -1,12 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 :root {
-    --green-logo-color: #2d8765;
+    --blue-logo-color: #88c4d7;
+    --blue-bg-color: #88c5d7a4;
+    --gray-logo-color: #7d7473;
     --main-white: #fdfdfc;
     --positive-green: #d0fbe5;
-    --bold-green: #277a55;
+    --bold-green: #278765;
     --large-text-black: #292524;
     --small-text-black: #201b1a;
+
+    /*88c5d7c9*/
 }
 
 body {
@@ -23,27 +27,26 @@ body {
 
 #header {
     display: flex;
-    position: static;
+    position: fixed;
     width: 100vw;
     height: 100px;
     background: linear-gradient(
         90deg,
         var(--main-white)0%,
-        var(--positive-green)50%,
-        var(--positive-green)100%
+        var(--blue-bg-color)50%,
+        var(--blue-bg-color)100%
     );
-    
 }
 
 #header > img {
     display: flex;
     align-content: flex-start;
     position: relative;
-    width: 300px;
-    height: 300px;
-    align-self:center;
-    margin-right: -100px;
-    margin-left: -50px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    margin-right: -120px;
+    margin-left: 100px;
 }
 
 #header > nav {
@@ -51,7 +54,7 @@ body {
     align-self: center;
     justify-content: center;
     gap: 50px;
-    padding-left: 350px
+    padding-left: 350px;
 
 }
 
@@ -60,53 +63,148 @@ body {
     width: 140px;
     height: 30px;
     text-align: center;
+    color: var(--large-text-black);
     font-size: 22px;
     font-weight: normal;
-    color: var(--small-text-black);
     transition: all 250ms ease-in-out;
 }
 
-a:hover {
-    color: var(--green-logo-color);
-    text-shadow: black .2px .2px .2px .2px;
-    font-weight: normal;
+#header > nav > a:hover {
+    color: var(--gray-logo-color);
+    text-shadow: var(--main-white) 0.5px 0.5px 0.5px;
 }
 
 .banner {
     display: flex;
     width: 100vw;
-    height: 400px;
+    height: 500px;
+    padding-top: 200px;
+    padding-bottom: 50px;
     background-size: cover;
     background-position: center;
      background: linear-gradient(
         90deg,
         var(--main-white)0%,
-        var(--positive-green)50%,
-        var(--positive-green)100%
+        var(--blue-bg-color)50%,
+        var(--blue-bg-color)100%
     );
 
 }
 
 .banner-message1 {
     width: 50vw;
-    height: 400px;
+    height: 300px;
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-left: -75px;
 
 }
 
 .banner-message1 > h1 {
-    flex-direction: 1;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 60px;
     text-align: center;
     justify-self: center;
+    color: var(--large-text-black);
+    /*text-shadow: black 0.5px 0.5px 0.5px;*/
+    
 }
 
 .banner-message1 > h3 {
-    flex: 1;
     margin-top: 50px;
     position: relative;
     text-align: left;
     width: 500px;
     justify-self: center;
+    font-weight: 300;
+    text-align: justify;
 
+}
+
+.banner-img {
+    align-self: center;
+    padding-left: 50px;
+}
+
+.servicos {
+    width: 100%;
+     background: linear-gradient(
+        90deg,
+        var(--main-white)0%,
+        var(--blue-bg-color)50%,
+        var(--blue-bg-color)100%
+     );  
+
+}
+
+.servicos > h1 {
+    text-align: center;
+    padding-bottom: 100px;
+
+}
+
+.atendimento-clinico > img {
+    display: flex;
+    width: 200px;
+    margin-bottom: -70px;
+    border: white solid 5px;
+    border-radius: 20px;
+}
+
+.atendimento-clinico > h3 {
+    position: relative;
+    justify-self: left;
+    text-align: center;
+    padding-left: 120px;
+}
+
+.banho-e-tosa > img {
+    display: flex;
+    justify-self: center;
+    width: 200px;
+    border: white solid 5px;
+    border-radius: 20px;
+}
+
+.banho-e-tosa > h3 {
+    justify-self: center;
+    text-align: center;
+    padding-left: 120px;
+}
+
+.vacinacao > img {
+    display: flex;
+    width: 200px;
+    justify-self: right;
+    border: white solid 5px;
+    border-radius: 20px;
+}
+.doc-para-viagens > img {
+    display: flex;
+    width: 200px;
+    justify-self: left;
+    margin-left: 100px;
+    margin-bottom: -70px;
+    border: white solid 5px;
+    border-radius: 20px;
+}
+
+.cirurgias > img {
+    display: flex;
+    width: 200px;
+    justify-self: center;
+    margin-left: 100px;
+    margin-bottom: -70px;
+    border: white solid 5px;
+    border-radius: 20px;
+}
+
+.nutricao > img {
+    display: flex;
+    width: 200px;
+    justify-self: right;
+    margin-left: 100px;
+    margin-bottom: -70px;
+    border: white solid 5px;
+    border-radius: 20px;
 }
