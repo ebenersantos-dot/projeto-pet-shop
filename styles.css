@@ -172,6 +172,7 @@ body {
 
 .servico-atendimento:hover {
     box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+    transform: translateY(-5px);
 }
 
 .servico-banho-e-tosa {
@@ -194,6 +195,7 @@ body {
 
 .servico-banho-e-tosa:hover {
     box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+    transform: translateY(-5px);
 }
 
 .servico-vacinacao {
@@ -216,6 +218,7 @@ body {
 
 .servico-vacinacao:hover {
     box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+    transform: translateY(-5px);
 }
 
 .servicos2 {
@@ -253,6 +256,7 @@ body {
 
 .doc-para-viagens:hover {
     box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+    transform: translateY(-5px);
 }
 
 .cirurgias {
@@ -275,6 +279,7 @@ body {
 
 .cirurgias:hover {
     box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+    transform: translateY(-5px);
 }
 
 .nutricao {
@@ -296,7 +301,30 @@ body {
 }
 
 .nutricao:hover {
-    box-shadow: var(--gray-logo-color) 2px 2px 2px ;
+    box-shadow: var(--gray-logo-color) 2px 2px 2px;
+    transform: translateY(-5px);
 }
+
+.agendamento {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    gap: 250px;          
+    flex-wrap: wrap;          
+    padding: 20px;
+    background: linear-gradient(
+        90deg,
+        var(--main-white)0%,
+        var(--blue-bg-color)50%,
+        var(--blue-bg-color)100%
+     );
+     padding: 100px;  
+}
+
+.agendamento-mensagem {
+    display: flex;
+    align-self: left;
+}
+
 
 
