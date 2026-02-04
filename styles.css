@@ -350,7 +350,7 @@ form {
     box-shadow: 0 10px 25px var(--gray-logo-color);
     z-index: 1;
     width: 500px;
-    height: 700px;
+    height: 800px;
 }
 
 .form-item label {
@@ -443,13 +443,14 @@ form {
 .testimonial-avatar {
     display: flex;
     padding: 10px;
-    width: 50px;
+    width: 48px;
+    height: 50px;
 }
 
 .testimonial-avatar img {
     position: inherit;
-    width: 50px;
-    height: 48px;
+    width: 48px;
+    height: 50px;
     border-radius: 50%;
     border: 3px solid var(--blue-bg-color); 
 }
@@ -463,15 +464,15 @@ form {
 .avatar-id-title {
     display: flex;
     font-size: 13px;
-    justify-content: center;
-    margin-left: 35px;
-    margin-top: -57px;
+    justify-content: left;
+    margin-left: 78px;
+    margin-top: -48px;
     width: 100%;
 }
 
 .testimonial-review {
     display: flex;
-    
+
 }
 
 
