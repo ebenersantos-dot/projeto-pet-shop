@@ -19,7 +19,6 @@ body {
     font-weight: 300;
     font-style: normal;
     margin: 0;
-    background-color: var(--main-white);
 
 }
 
@@ -70,6 +69,7 @@ body {
 #header > nav > a:hover {
     color: var(--gray-logo-color);
     text-shadow: var(--main-white) 0.5px 0.5px 0.5px;
+    transform: translateY(-3px);
 }
 
 .banner {
@@ -80,12 +80,12 @@ body {
     padding-bottom: 50px;
     background-size: cover;
     background-position: center;
-     background: linear-gradient(
+    /*background: linear-gradient(
         90deg,
         var(--main-white)0%,
         var(--blue-bg-color)50%,
         var(--blue-bg-color)100%
-    );
+    );*/
 
 }
 
@@ -129,12 +129,12 @@ body {
     margin: 0;
     width: 100vw;
     text-align: center;
-    background: linear-gradient(
+    /*background: linear-gradient(
         90deg,
         var(--main-white)0%,
         var(--blue-bg-color)50%,
         var(--blue-bg-color)100%
-     );  
+     ); */ 
 }
 
 .servicos {
@@ -144,12 +144,12 @@ body {
     gap: 250px;          
     flex-wrap: wrap;          
     padding: 20px;
-    background: linear-gradient(
+    /*background: linear-gradient(
         90deg,
         var(--main-white)0%,
         var(--blue-bg-color)50%,
         var(--blue-bg-color)100%
-     );  
+     );*/  
 }
 
 .servico-atendimento {
@@ -228,12 +228,12 @@ body {
     gap: 250px;          
     flex-wrap: wrap;          
     padding: 20px;
-    background: linear-gradient(
+    /*background: linear-gradient(
         90deg,
         var(--main-white)0%,
         var(--blue-bg-color)50%,
         var(--blue-bg-color)100%
-     );  
+     );*/  
 }
 
 .doc-para-viagens {
@@ -305,7 +305,7 @@ body {
     transform: translateY(-5px);
 }
 
-.agendamento {
+.container-agendamento {
     display: flex;            
     justify-content: center;  
     align-items: center;      
@@ -321,10 +321,168 @@ body {
      padding: 100px;  
 }
 
-.agendamento-mensagem {
+.agendamento-mensagem h1 {
     display: flex;
-    align-self: left;
+    font-size: 35px;
+    padding-bottom: 30px;
+
 }
+
+.agendamento-mensagem p {
+    display: flex;
+    font-size: 22px;
+    justify-content: center;
+    width: 460px;
+    color: var(--gray-logo-color);
+}
+
+
+form {
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+.form-board {
+    background-color: var(--main-white);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px var(--gray-logo-color);
+    z-index: 1;
+    width: 500px;
+    height: 700px;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--small-text-black);
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.form-item input, .form-item select {
+    width: 100%;
+    padding: 7px 2px;
+    border: 1.5px solid var(--gray-logo-color);
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: inherit;
+    margin-bottom: 20px;
+
+}
+
+.button-submit {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(
+        180deg,
+        var(--blue-bg-color)0%,
+        var(--blue-logo-color)100%
+     );
+     color: var(--small-text-black);
+     border-radius: 10px;
+     font-size: 18px;
+     margin-top: 50px;
+     cursor: pointer;
+     transition: all 250ms ease-in-out;
+     box-shadow: 0.5px 1px var(--gray-logo-color);
+
+}
+
+.button-submit:hover {
+    background: linear-gradient(
+        280deg,
+        var(--blue-bg-color)0%,
+        var(--blue-logo-color)100%
+     );
+     box-shadow: 2px 2px 2px var(--gray-logo-color);
+     transform: translateY(-3px);
+
+}
+
+.testimonials-container {
+    display: flex;            
+    justify-content: center;      
+    gap: 150px;
+    margin-top: 0px;          
+    flex-wrap: wrap;          
+    padding: 100px;
+    
+}
+
+.testimonials-container h1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: -100px;
+
+}
+
+.testimonial-box {
+    display: flex;
+    background: var(--main-white);
+    width: 300px;
+    height: 250px;
+    flex-wrap: wrap;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: var(--gray-logo-color) 2px 2px 2px 2px;
+    transition: all 300ms ease-in-out
+}
+
+.testimonial-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--gray-logo-color) 4px 4px 4px 4px;
+}
+
+.testimonial-avatar {
+    display: flex;
+    padding: 10px;
+    width: 50px;
+}
+
+.testimonial-avatar img {
+    position: inherit;
+    width: 50px;
+    height: 48px;
+    border-radius: 50%;
+    border: 3px solid var(--blue-bg-color); 
+}
+
+.avatar-id h4 {
+    display: flex;
+    text-align: justify;
+    padding-left: 10px;    
+}
+
+.avatar-id-title {
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    margin-left: 35px;
+    margin-top: -57px;
+    width: 100%;
+}
+
+.testimonial-review {
+    display: flex;
+    
+}
+
+
+.footer {
+    width: 100vw;
+    text-align: center;
+    background-color: var(--main-white);
+    height: 100px;
+    align-content: center;
+}
+
 
 
 
