@@ -48,7 +48,7 @@ projeto-pet-shop/
 ├── index.html
 ├── confirmation-pg.html
 ├── styles.css
-├── img/
+├── img/ 
 └── README.md
 ```
 
@@ -56,13 +56,12 @@ projeto-pet-shop/
 
 ### Página inicial
 
-![Prévia da página inicial do Petpaw](./img/dog-colo.jpg)
+![Prévia da página inicial do Petpaw](./screenshots/print-mainpg.png)
 
 ### Confirmação de agendamento
 
-![Prévia da página de confirmação do Petpaw](./img/digo-colo.png)
+![Prévia da página de confirmação do Petpaw](./screenshots/print-confpg.png)
 
-> Dica: para portfólio, você pode substituir essas imagens por capturas reais de tela e manter os arquivos em `img/screenshots/`.
 
 ## Como executar localmente
 
