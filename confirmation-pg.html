@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Agendamento Confirmado | Petpaw</title>
+</head>
+<body class="confirmation-page">
+    <header>
+        <div id="header">
+            <a class="logo-link" href="./index.html" aria-label="Voltar para a página inicial">
+                <img src="./img/paw-blue.png" alt="Logo Petpaw">
+            </a>
+            <nav>
+                <a href="./index.html#inicio">Início</a>
+                <a href="./index.html#servicos">Serviços</a>
+                <a href="./index.html#agendamento">Agendamento</a>
+                <a href="./index.html#contato">Contato</a>
+                
+                
+            </nav>
+        </div>
+    </header>
+
+    <main class="confirmation-wrapper">
+        <section class="confirmation-card" aria-live="polite">
+            <div class="confirmation-content">
+                <div class="confirmation-icon" aria-hidden="true">✓</div>
+                <h1>Agendamento confirmado, <span id="tutor-confirmacao">tutor(a)</span>!</h1>
+                <p>Recebemos o pedido de atendimento para <strong id="pet-confirmacao">seu pet</strong> e nossa equipe vai entrar em contato para confirmar os detalhes da consulta.</p>
+                <p class="confirmation-note">Obrigado por confiar na Petpaw. Seu melhor amigo está em boas mãos.</p>
+                <a class="confirmation-return" href="./index.html">Voltar para a página principal</a>
+            </div>
+
+            <div class="confirmation-illustration">
+                <img src="./img/digo-colo.png" alt="Cachorro sendo acolhido pela equipe Petpaw">
+            </div>
+        </section>
+    </main>
+
+    <div class="footer" id="contato">
+        <footer class="footer-content">
+            <p>Petpaw © Todos os direitos reservados</p>
+            <nav class="footer-nav" aria-label="Navegação do rodapé">
+                <a href="./index.html#inicio">Início</a>
+                <a href="./index.html#servicos">Serviços</a>
+                <a href="./index.html#agendamento">Agendamento</a>
+                <a href="./index.html#contato">Contato</a>
+            </nav>
+        </footer>
+    </div>
+
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const tutorNome = (params.get("nome-tutor") || "").trim();
+            const petNome = (params.get("nome-pet") || "").trim();
+
+            const tutorEl = document.getElementById("tutor-confirmacao");
+            const petEl = document.getElementById("pet-confirmacao");
+
+            if (tutorEl && tutorNome) tutorEl.textContent = tutorNome;
+            if (petEl && petNome) petEl.textContent = petNome;
+        })();
+    </script>
+</body>
+</html>
